@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+}
+
+.pageTitle {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.itemTitle {
+  font-size: 12px;
+  color: navy;
+  margin-bottom: 6px;
+}
+
+.gameList {
+  list-style: none;
+  width: 100%;
+}
+
+.gameListItem {
+  font-size: 10px;
+  margin-bottom: 16px;
+}
+
+.gameLinkItem {
+  display: flex;
+}
+
+.gameLinkItem:hover {
+  color: darkgoldenrod;
+}
+
+.gameRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 0;
+  gap: 5px;
+}
+
+.provider {
+  text-decoration: underline;
+}

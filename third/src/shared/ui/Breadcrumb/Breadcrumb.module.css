@@ -1,0 +1,29 @@
+.nav {
+  font-size: 6px;
+  font-weight: 400;
+  color: darkcyan;
+  margin-bottom: 12px;
+}
+
+.list {
+  display: inline;
+  list-style: none;
+  gap: 10px;
+}
+
+.item {
+  display: inline;
+  flex: 0;
+}
+
+.link:hover {
+  color: darkgoldenrod;
+}
+
+.item:first-of-type {
+  margin-left: 0;
+}
+
+.separator {
+  margin: 0 3px;
+}

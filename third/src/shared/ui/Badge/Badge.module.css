@@ -1,0 +1,7 @@
+.badge {
+  background: lightseagreen;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
