@@ -9,10 +9,9 @@ import { ResponsiveImage } from 'shared/shared/ui/ResponsiveImage/ResponsiveImag
 interface Props {
   params: { id: string; seo_title: string };
   searchParams: { [key: string]: string | string[] | undefined };
-  game: Game;
 }
 
-export const getGameData = async ({
+const getGameData = async ({
   id,
   seo_title,
 }: {
