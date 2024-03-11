@@ -1,0 +1,103 @@
+.button {
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  font-family: 'Sofia Sans';
+}
+
+.gradientBorder {
+  padding: 1px;
+  border-radius: 4px;
+  background-clip: padding-box;
+
+  &.active {
+    background: linear-gradient(45deg, #54f4df, #2ab6fd);
+  }
+}
+
+.background {
+  border-radius: 4px;
+  background: #2b2c36;
+}
+
+.selectButton {
+  border: 0;
+  border-radius: 4px;
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 238px;
+  height: 34px;
+  border-radius: 4px;
+  color: #bac1cc;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  &.active {
+    background: rgba(52, 196, 246, 0.1);
+  }
+}
+
+.optionsList {
+  background: rgba(43, 44, 54, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(71, 194, 233, 0.18);
+  border-width: 1px 1px 0px 1px;
+}
+
+.option {
+  background: rgba(43, 44, 54, 1);
+  color: rgba(186, 193, 204, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Sofia sans';
+
+  border-bottom: 1px solid rgba(186, 193, 204, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(52, 196, 246, 0.1);
+    color: #fff;
+
+    .itemIcon {
+      fill: #fff;
+    }
+  }
+}
+
+.itemContainer {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  letter-spacing: 1px;
+  margin-bottom: -1px;
+}
+
+.itemValue {
+  text-transform: uppercase;
+}
+
+.itemIcon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(186, 193, 204, 1);
+}
