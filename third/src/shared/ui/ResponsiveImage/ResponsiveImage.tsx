@@ -19,11 +19,11 @@ export const ResponsiveImage = ({ src, minWidth, maxWidth }: IProps) => {
       const updateWidth = () => {
         const countWidth = (newValue: number) => {
           let width = newValue;
-          if (minWidth) {
-            width = newValue < minWidth ? minWidth : newValue;
+          if (minWidth && minWidth > newValue) {
+            width = minWidth;
           }
-          if (maxWidth) {
-            width = newValue > maxWidth ? maxWidth : newValue;
+          if (maxWidth && maxWidth < newValue) {
+            width = maxWidth;
           }
           return width;
         };
@@ -47,8 +47,8 @@ export const ResponsiveImage = ({ src, minWidth, maxWidth }: IProps) => {
       <Image
         src={src}
         alt='Game poster'
-        width={imageWidth}
-        height={imageWidth}
+        layout='fill'
+        objectFit='contain'
         priority
       />
     </div>

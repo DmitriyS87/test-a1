@@ -37,7 +37,7 @@ export default async function Page({ params: { id, seo_title } }: Props) {
       <section className={styles.container}>
         <h5 className={styles.title}>{game.title}</h5>
         <div className={styles.imgContainer}>
-          <ResponsiveImage src={imgUrl} minWidth={150} maxWidth={250} />
+          <ResponsiveImage src={imgUrl} minWidth={360} maxWidth={560} />
         </div>
         <div className={cn(styles.data)}>
           <strong className={styles.subtitle}>Categories:</strong>

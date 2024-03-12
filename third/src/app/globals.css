@@ -111,5 +111,6 @@ a {
   flex-direction: column;
   padding: 1rem;
   min-height: 100vh;
-  min-width: 180px;
+  min-width: 320px;
+  max-width: 640px;
 }
